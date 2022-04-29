@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .mask {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: all .3s;
+    }
+
+
+
+    /*
+    .one {
+      width: 50px;
+      height: 30px;
+      clip-path: polygon(10px 0,
+          0 6px,
+          0 calc(100% - 20%),
+          10px 100%,
+          100% 100%,
+          100% 100%,
+          100% 0);
+      line-height: 30px;
+      background-color: #f0f;
+    }
+
+    .two {
+      width: 50px;
+      height: 30px;
+      clip-path: polygon(10px 0,
+          0 6px,
+          0 calc(100% - 20%),
+          10px 100%,
+          100% 100%,
+          100% 100%,
+          100% 0);
+      line-height: 30px;
+      background-color: #0ff;
+    }
+
+    .one,
+    .two {
+      position: absolute;
+      right: -2%;
+      padding-left: 3px;
+    }
+
+    .one {
+      top: 50px;
+    }
+
+    .two {
+      top: 100px;
+    }
+
+    .one:hover,
+    .two:hover {
+      right: 0;
+      transition: right .6s linear;
+    }
+
+    .one:link,
+    .two:link {
+      right: 0;
+      transition: right .6s linear;
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- <div class="mask"></div> -->
+  <form submit="fn()">
+    <input type="text"
+           onkeydown="fn(event)">
+    <!-- <input type="text"> -->
+  </form>
+
+  <!-- <div class="one">1</div>
+  <div class="two">2</div> -->
+</body>
+<script>
+  function fn(e) {
+    console.log('e', e)
+    e.preventDefault();
+
+  }
+</script>
+
+</html>
